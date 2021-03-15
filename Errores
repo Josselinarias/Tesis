@@ -1,0 +1,27 @@
+Converting covariates to principal components...
+Deriving oblique coordinates...TRUE
+Subsetting observations to 0% complete cases...TRUE
+Fitting a variogram using 'linkfit' and trend model...TRUE
+Estimating block size ID for spatial Cross Validation...TRUE
+Warning in parallelStart(mode = MODE_SOCKET, cpus = cpus, socket.hosts = socket.hosts,  :
+  Parallelization was not stopped, doing it now.
+Stopped parallelization. All cleaned up.
+Starting parallelization in mode=socket with cpus=8.
+Using learners: regr.ranger, regr.xgboost, regr.nnet, regr.ksvm, regr.cvglmnet...TRUE
+Fitting a spatial learner using 'mlr::makeRegrTask'...TRUE
+Exporting objects to slaves for mode socket: .mlr.slave.options
+Mapping in parallel: mode = socket; level = mlr.resample; cpus = 8; elements = 10.
+Error in stopWithJobErrorMessages(inds, vcapply(result.list[inds], as.character)) : 
+  Errors occurred in 3 slave jobs, displaying at most 10 of them:
+
+00004: Error in asInteger(subset, min.len = 1L, any.missing = FALSE, lower = 1L,  : 
+  Assertion on 'subset' failed: Must have length >= 1, but has length 0.
+
+00005: Error in asInteger(subset, min.len = 1L, any.missing = FALSE, lower = 1L,  : 
+  Assertion on 'subset' failed: Must have length >= 1, but has length 0.
+
+00008: Error in asInteger(subset, min.len = 1L, any.missing = FALSE, lower = 1L,  : 
+  Assertion on 'subset' failed: Must have length >= 1, but has length 0.
+
+Además: Warning message:
+In proj4string(obj) : CRS object has comment, which is lost in output
